@@ -17,7 +17,7 @@ let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/calculator', component: require('./components/Calculator.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default },
-    // { path: '*', component: require('./components/NotFound.vue').default }
+    { path: '*', component: require('./components/NotFound.vue').default }
   // Separated into two routes so that you can also programmatically
   // direct the user to the /404 if missing some data, etc.
 //   { path: '/404', component: require('./components/NotFound.vue').default },
@@ -25,7 +25,7 @@ let routes = [
 ]
 
 const router = new VueRouter({
-    // mode: 'history',
+    mode: 'history',
     // base: process.env.BASE_URL,
     routes //short for routes: routes
 });
