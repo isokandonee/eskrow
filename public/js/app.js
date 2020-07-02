@@ -38606,9 +38606,7 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-8 mt-4" }, [
-        _c("h3", [
-          _vm._v("404! The Page You're Looking For Cannot Be Not Found ")
-        ]),
+        _c("h3", [_vm._v("404! The Page Cannot Not Be Found ")]),
         _vm._v(" "),
         _c(
           "svg",
@@ -55619,7 +55617,7 @@ var routes = [{
 //   { path: '*', redirect: '/404' }
 ];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'history',
+  // mode: 'history',
   // base: process.env.BASE_URL,
   routes: routes //short for routes: routes
 
