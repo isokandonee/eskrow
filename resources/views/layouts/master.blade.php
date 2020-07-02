@@ -76,8 +76,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </router-link>
           </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item has-treeview menu-closed">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-cog"></i>
               <p>
                 Management
@@ -86,7 +86,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="#" class="nav-link">
                   <i class="fas fa-circle nav-icon"></i>
                   <p>Management</p>
                 </a>
@@ -99,9 +99,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-cog"></i>
+          <li class="nav-item">
+            <router-link to="/profile" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Profile
+                {{-- <span class="right badge badge-danger">New</span> --}}
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item has-treeview menu-closed">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-wrench"></i>
               <p>
                 Apps
                 <i class="right fas fa-angle-left"></i>
@@ -109,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <router-link to="/calculator" class="nav-link active">
+                <router-link to="/calculator" class="nav-link">
                   <i class="fas fa-calculator nav-icon"></i>
                   <p>Calculator</p>
                 </router-link>
@@ -121,15 +130,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <router-link to="/profile" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Profile
-                {{-- <span class="right badge badge-danger">New</span> --}}
-              </p>
-            </router-link>
           </li>
           {{-- Logout --}}
           <li class="nav-item">
@@ -154,7 +154,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    {{-- <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
@@ -168,7 +168,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
-    </div>
+    </div> --}}
     <!-- /.content-header -->
 
     <!-- Main content -->

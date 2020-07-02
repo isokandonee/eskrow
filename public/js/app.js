@@ -53834,9 +53834,15 @@ var routes = [{
 }, {
   path: '/profile',
   component: __webpack_require__(/*! ./components/Profile.vue */ "./resources/js/components/Profile.vue")["default"]
-}];
+} // { path: '*', component: require('./components/NotFound.vue').default }
+// Separated into two routes so that you can also programmatically
+// direct the user to the /404 if missing some data, etc.
+//   { path: '/404', component: require('./components/NotFound.vue').default },
+//   { path: '*', redirect: '/404' }
+];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   // mode: 'history',
+  // base: process.env.BASE_URL,
   routes: routes //short for routes: routes
 
 });
