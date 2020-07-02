@@ -17,6 +17,7 @@ let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
     { path: '/calculator', component: require('./components/Calculator.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default },
+    { path: '/users', component: require('./components/Users.vue').default },
     { path: '*', component: require('./components/NotFound.vue').default }
   // Separated into two routes so that you can also programmatically
   // direct the user to the /404 if missing some data, etc.

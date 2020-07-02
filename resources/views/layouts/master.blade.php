@@ -69,7 +69,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           
           <li class="nav-item">
             <router-link to="/dashboard" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-tachometer-alt blue"></i>
               <p>
                 Dashboard
                 {{-- <span class="right badge badge-danger">New</span> --}}
@@ -78,7 +78,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item has-treeview menu-closed">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-cog"></i>
+              <i class="nav-icon fas fa-cog orange"></i>
               <p>
                 Management
                 <i class="right fas fa-angle-left"></i>
@@ -86,10 +86,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-circle nav-icon"></i>
-                  <p>Management</p>
-                </a>
+                <router-link to="/users" class="nav-link">
+                  <i class="fas fa-users nav-icon purple"></i>
+                  <p>Users</p>
+                </router-link>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <router-link to="/profile" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+              <i class="nav-icon fas fa-user teal"></i>
               <p>
                 Profile
                 {{-- <span class="right badge badge-danger">New</span> --}}
@@ -110,7 +110,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item has-treeview menu-closed">
             <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-wrench"></i>
+              <i class="nav-icon fas fa-wrench yellow"></i>
               <p>
                 Apps
                 <i class="right fas fa-angle-left"></i>
@@ -119,7 +119,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <router-link to="/calculator" class="nav-link">
-                  <i class="fas fa-calculator nav-icon"></i>
+                  <i class="fas fa-calculator nav-icon cyan"></i>
                   <p>Calculator</p>
                 </router-link>
               </li>
@@ -134,7 +134,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           {{-- Logout --}}
           <li class="nav-item">
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link" >
-              <i class="nav-icon fas fa-power-off"></i>
+              <i class="nav-icon fas fa-power-off red"></i>
               <p>
                 Logout
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
